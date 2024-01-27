@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        display : inline (cannot apply width and height), block, flex, grid, inline-block(apply width and height)
+        */
+        .tip{
+            display: none;
+        }
+        .parent:hover .tip{
+            display: block;
+        }
+        img{transition: all 1s ease-in;}
+        img:hover{
+            border: 2px solid salmon;
+            opacity: 0.5;
+        }
+        .in{
+            visibility: hidden;
+            opacity: 0;
+        }
+        .main{
+            background-color: burlywood;
+
+        }
+        .m1{
+            display: inline-block;
+            width: 60%;
+            border: 2px solid salmon;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>DISPLAY ELEMENTS</h1>
+    <div class="parent">
+        <p>Please hover here</p>
+        <p class="tip">This will not be displayed eventually</p>
+    </div>
+    <h1>Message</h1>
+    <img src="../images/Fun Fact1.jpg"/>
+    <div class="vis">
+        Visibility of ELEMENTS
+        <p class="in">Invisible to visible</p>
+    </div>
+    <h1>SOme INFO</h1>
+
+    <div class="main">
+        <div class="m1">
+            <h1>Some <span>content</span> on the left</h1>
+        </div>
+        <div class="m1">
+            <h1>Some content next to left</h1>
+        </div>
+    </div>
+    </br>
+</br></br></br></br>
+</body>
+</html>

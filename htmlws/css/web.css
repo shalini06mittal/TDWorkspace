@@ -1,0 +1,49 @@
+/*
+Header : Line 11
+Navigation Bar : Line 14
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* ---- HEADER ----- */
+header{
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    overflow: hidden;
+    background-color: #333;
+}
+nav a{
+    float: left;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 1s;
+}
+nav a:hover{
+    background-color:aliceblue;
+    color: black;
+}
+
+/* ---- COLUMNS -------*/
+.col{
+    float: left;
+    width: 33.3333%;
+    text-align: justify;
+    padding: 7px;
+}
+.row:after{
+    clear: both;
+}
+@media screen and (max-width:600px){
+    .col{
+        width: 100%;
+    }
+}

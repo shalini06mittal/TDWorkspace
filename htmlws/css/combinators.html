@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #desc, #child, #adj, #gen{
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+        }
+        div#desc p{
+            color: red;
+        }
+        div#child > p{
+            color: red;
+        }
+        div#adj + p{
+            color: red;
+        }
+        div#gen ~ p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>COMBINATORS FOR DIFFERENT ELEMENTS</h1>
+    <ul>
+        <li>descendant selector (space)</li>
+        <li>child selector (>)</li>
+        <li>adjacent sibling selector (+)</li>
+        <li>general sibling selector (~)</li>
+    </ul>
+    <h1>descendant selector</h1>
+    <div id="desc">
+        <p>Understand selector</p>
+        <p>They are used a lot</p>
+        <p>Lets see how it works</p>
+        <h1>Heading</h1>
+        <article>
+            <p>Inside a div and a div</p>
+        </article>
+    </div>
+    <p> this  one is not the descendant</p>
+    <h1>Child selector</h1>
+    <div id="child">
+        <p>Understand selector</p>
+        <p>They are used a lot</p>
+        <p>Lets see how it works</p>
+        <h1>Heading</h1>
+        <article>
+            <p>Inside a div and a div</p>
+        </article>
+    </div>
+    <p> this  one is not the descendant</p>
+    <h1>Adjacent Sibling selector</h1>
+    <div id="adj">
+        <p>Understand selector</p>
+        <p>They are used a lot</p>
+        <p>Lets see how it works</p>
+        <h1>Heading</h1>
+        <article>
+            <p>Inside a div and a div</p>
+        </article>
+    </div>
+    <p> this  one is adjacent sibling</p>
+    <p> this  one is next adjacent sibling</p>
+    <h1>General Sibling selector</h1>
+    <div id="gen">
+        <p>Understand selector</p>
+        <p>They are used a lot</p>
+        <p>Lets see how it works</p>
+        <h1>Heading</h1>
+        <article>
+            <p>Inside a div and a div</p>
+        </article>
+    </div>
+    <p> this  one is adjacent sibling</p>
+    <p> this  one is next adjacent sibling</p>
+</body>
+</html>
